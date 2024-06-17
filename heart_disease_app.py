@@ -147,3 +147,51 @@ if prediction == 1:
     st.write("The patient is LIKELY to have heart disease. Further tests or treatment may be necessary.")
 else:
     st.write("The patient is UNLIKELY to have heart disease.")
+
+#CSS
+css = """
+<style>
+    h1 {
+        color: #2c3e50;
+        font-size: 2em;
+        border-bottom: 2px solid #2980b9;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        color: #2980b9;
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    label {
+        font-weight: bold;
+        color: #2c3e50;
+        display: block;
+        margin-top: 10px;
+    }
+    .stNumberInput, .stSelectbox {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        background-color: #2980b9;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    button:hover {
+        background-color: #1c6692;
+    }
+</style>
+"""
+
+#Injected CSS
+st.markdown(css, unsafe_allow_html=True)
